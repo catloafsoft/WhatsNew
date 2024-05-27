@@ -82,15 +82,15 @@ struct WhatsNewView_Previews: PreviewProvider {
             VStack (alignment: .leading) {
                 BulletPointView(title: "New feature",
                                 systemName: "circle.fill") {
-                    Text("This is a new feature for this app. And this text should wrap.")
+                    Text(verbatim: "This is a new feature for this app. And this text should wrap.")
                 }
                 BulletPointView(title: "New feature",
                                 systemName: "square.fill") {
-                    Text("This is a new feature for this app. And this text should wrap.")
+                    Text(verbatim: "This is a new feature for this app. And this text should wrap.")
                 }
                 BulletPointView(title: "New feature",
                                 systemName: "triangle.fill") {
-                    Text("This is a new feature for this app. And this text should wrap.")
+                    Text(verbatim: "This is a new feature for this app. And this text should wrap.")
                 }
             }
         }

@@ -3,7 +3,6 @@
   "strings" : {
     "Continue" : {
       "comment" : "Button",
-      "extractionState" : "migrated",
       "localizations" : {
         "ca" : {
           "stringUnit" : {
@@ -33,12 +32,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Συνέχεια"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue"
           }
         },
         "es" : {
@@ -165,7 +158,6 @@
     },
     "What's New\nin %@" : {
       "comment" : "Dialog Title",
-      "extractionState" : "migrated",
       "localizations" : {
         "ca" : {
           "stringUnit" : {
@@ -195,12 +187,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τι νέο υπάρχει\nστο %@"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "What's New\nin %@"
           }
         },
         "es" : {

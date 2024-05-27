@@ -97,22 +97,22 @@ struct BulletPointView_Previews: PreviewProvider {
         ScrollView {
             VStack (alignment: .leading){
                 BulletPointView(systemName: "square.and.pencil") {
-                    Text("Bullet point 1")
+                    Text(verbatim: "Bullet point 1")
                 }
                 BulletPointView(systemName: "hare.fill") {
-                    Text("Bullet point 2")
+                    Text(verbatim: "Bullet point 2")
                 }
                 BulletPointView(systemName: "circle.fill") {
-                    Text("Bullet point 3")
+                    Text(verbatim: "Bullet point 3")
                 }
                 BulletPointView(systemName: "car.2.fill") {
-                    Text("Bullet point 4")
+                    Text(verbatim: "Bullet point 4")
                 }
                 BulletPointView(systemName: "switch.2") {
-                    Text("Bullet point 5")
+                    Text(verbatim: "Bullet point 5")
                 }
                 BulletPointView(systemName: "ellipsis") {
-                    Text("Bullet point 6")
+                    Text(verbatim: "Bullet point 6")
                 }
             }
         }.padding()
