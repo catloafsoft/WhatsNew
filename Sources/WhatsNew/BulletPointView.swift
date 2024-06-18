@@ -16,27 +16,32 @@ public struct BulletPointView<Content: View>: View {
     let imageName: String?
     let systemName: String?
     let content: Content
+    var alignment: VerticalAlignment
     
     public init(title: String = "New feature",
                 imageName: String = "circle.fill",
+                alignment: VerticalAlignment = .center,
                 @ViewBuilder content: () -> Content) {
         self.title = title
         self.imageName = imageName
+        self.alignment = alignment
         self.systemName = nil
         self.content = content()
     }
     
     public init(title: String = "New feature",
                 systemName: String = "circle.fill",
+                alignment: VerticalAlignment = .center,
                 @ViewBuilder content: () -> Content) {
         self.title = title
         self.imageName = nil
+        self.alignment = alignment
         self.systemName = systemName
         self.content = content()
     }
 
     public var body: some View {
-        HStack (alignment: .center){
+        HStack (alignment: alignment){
 #if os(iOS)
             if let name = imageName, let image = UIImage(named: name) {
                 Image(uiImage: image)

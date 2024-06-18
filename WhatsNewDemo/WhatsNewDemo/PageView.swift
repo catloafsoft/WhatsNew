@@ -23,9 +23,11 @@ struct PageView: View {
                     Text("Search to find books that have been on previous best seller lists.")
                 }
                 BulletPointView(title: "We now have OTHER STUFF!!!",
-                                systemName: "ant") {
+                                systemName: "ant",
+                                alignment: .top) {
                     Text("Search to find books that have been on previous best seller lists.")
                     Toggle("Toggle", isOn: .constant(true))
+                    Text("This is top-aligned!")
                 }
                 BulletPointView(title: "More bugs squashed.",
                                 imageName: "Truck") {
